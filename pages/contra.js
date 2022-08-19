@@ -13,34 +13,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Super duper useful tools
+          Lo contrario
         </h1>
-
-        <p className={styles.description}>
-          Las herramientas mas copadas del viejo oeste
-        </p>
-
-        <div className={styles.grid}>
-          <a href="/contra" className={styles.card}>
-            <h2>Lo contrario &rarr;</h2>
-            <p>Esta página no está de acuerdo con lo que decís.</p>
-          </a>
-
-          <a href="/metricas" className={styles.card}>
-            <h2>Métricas &rarr;</h2>
-            <p>Acá se mide de todo... salvo eso que necesitas.</p>
-          </a>
-
-          <a href="/si" className={styles.card}>
-            <h2>Si &rarr;</h2>
-            <p>Todos necesitamos que nos validen de vez en cuando.</p>
-          </a>
-
-          <a href="/no" className={styles.card}>
-            <h2>No &rarr;</h2>
-            <p>Para esa persona que no merece ser validada.</p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>

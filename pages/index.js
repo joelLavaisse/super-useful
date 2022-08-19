@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -21,25 +22,33 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/contra" className={styles.card}>
-            <h2>Lo contrario &rarr;</h2>
-            <p>Esta página no está de acuerdo con lo que decís.</p>
-          </a>
+          <Link href="/contra">
+            <a className={styles.card}>
+              <h2>Lo contrario &rarr;</h2>
+              <p>Esta página no está de acuerdo con lo que decís.</p>
+            </a>
+          </Link>
 
-          <a href="/metricas" className={styles.card}>
-            <h2>Métricas &rarr;</h2>
-            <p>Acá se mide de todo... salvo eso que necesitas.</p>
-          </a>
+          <Link href="/metricas">
+            <a className={styles.card}>
+              <h2>Métricas &rarr;</h2>
+              <p>Acá se mide de todo... salvo eso que necesitas.</p>
+            </a>
+          </Link>
 
-          <a href="/si" className={styles.card}>
-            <h2>Si &rarr;</h2>
-            <p>Todos necesitamos que nos validen de vez en cuando.</p>
-          </a>
+          <Link href="/si">
+            <a className={styles.card}>
+              <h2>Si &rarr;</h2>
+              <p>Todos necesitamos que nos validen de vez en cuando.</p>
+            </a>
+          </Link>
 
-          <a href="/no" className={styles.card}>
-            <h2>No &rarr;</h2>
-            <p>Para esa persona que no merece ser validada.</p>
-          </a>
+          <Link href="/no">
+            <a className={styles.card}>
+              <h2>No &rarr;</h2>
+              <p>Para esa persona que no merece ser validada.</p>
+            </a>
+          </Link>
         </div>
       </main>
 
